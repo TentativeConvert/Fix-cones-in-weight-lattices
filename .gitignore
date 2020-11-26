@@ -1,0 +1,47 @@
+# temporary files
+temp.*
+.depend
+
+# temporary doc files
+docs/limits_old/*
+docs/*.aux
+docs/*.synctex.gz
+docs/*.log
+
+# emacs auto-save data
+*~
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+bin_win64/*
+bin_nix64/*
+*.exe
+*.out
+*.app
