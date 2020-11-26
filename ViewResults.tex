@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\newcommand{\resulttable}[1]{
+  \section*{#1}
+\begin{longtable}{llccc}
+  \toprule
+  \textbf{subset} & \textbf{type} & \textbf{chamber?} & \textbf{free?} & \textbf{orbit} \\
+                  &               &                   &                & \textbf{condition?} \\
+  \midrule
+  \input{results_#1.tex}
+  \bottomrule
+\end{longtable}
+}
+
+\begin{document}
+\resulttable{A5}\newpage
+\resulttable{B5}\newpage
+\resulttable{C5}\newpage
+\resulttable{D5}\newpage
+\resulttable{G2}
+\resulttable{F4}\newpage
+%\resulttable{E6}\newpage
+\resulttable{E7}\newpage
+\resulttable{E8}
+\end{document}
