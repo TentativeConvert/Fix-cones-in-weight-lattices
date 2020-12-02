@@ -206,7 +206,9 @@ main(List) := (listOfRootSystems) -> (
     	writeOut(R,results)
     	)
     )    
-main({rootSystemA(5),rootSystemB(5),rootSystemC(5),rootSystemD(5),rootSystemG2,rootSystemF4})
+main({rootSystemA(7),rootSystemB(7),rootSystemC(7),rootSystemD(7)})
+main({rootSystemD(8)})
+main({rootSystemG2,rootSystemF4})
 main({rootSystemE(6),rootSystemE(7)})
 
 -- ####################################################################################################
