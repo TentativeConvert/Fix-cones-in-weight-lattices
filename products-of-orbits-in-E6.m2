@@ -45,6 +45,11 @@ print("Computing orbit of omega_6 ...");
 orbit6 = orbit(omega6);
 print("... Done.");
 
+#orbit1 -- 27
+#orbit3 -- 216
+#orbit5 -- 216
+#orbit6 -- 27
+
 dominants = method(TypicalValue => List)
 dominants(List) := (L) -> (
     newL := {};	  
@@ -60,6 +65,7 @@ dominants1 = dominants(orbit1) -- should be just omega1
 dominants3 = dominants(orbit3) -- should be just omega3
 dominants5 = dominants(orbit5) -- should be just omega5
 dominants6 = dominants(orbit6) -- should be just omega6
+
 
 productorbit = method(TypicalValue => List)
 productorbit(List,List) := (L1,L2) -> (
@@ -85,3 +91,4 @@ tally(dominants35)
 -- S(ω3)S(ω5) = S(ω3+ω5) + 4 S(ω1+ω2+ω6) + 10 S(ω5+ω6) +  10 S(ω1+ω3) + 15 S(2ω2) + 18 S(ω4) + 32 S(ω1+ω6) + 60 S(ω2) + 216
    
     	
+

@@ -8,6 +8,9 @@ docs/*.aux
 docs/*.synctex.gz
 docs/*.log
 
+# private files (not to be shown on github)
+private*
+
 # emacs auto-save data
 *~
 
