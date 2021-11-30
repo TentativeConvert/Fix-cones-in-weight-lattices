@@ -39,14 +39,17 @@ powerSet(Set) := (S) -> (
     else return {set {}}
     )
 
+----------------------------------------------------------------------------------------------------
+
 beginDocumentation() -- very sensitive to indentation
 doc ///
 Key
-  A small collection of auxiliary functions.
+  Auxiliary
 Headline
   Auxiliary
 Description
  Text
+  A small collection of auxiliary functions.
   Developed for research related to the manuscript:
   Tobias Hemmert &  Marcus Zibrowius, The Witt rings of many flag varieties are exterior algebras.
 ///

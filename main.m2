@@ -199,3 +199,4 @@ main(List) := (listOfRootSystems) -> (
 
 -- main({rootSystemA(7),rootSystemB(7),rootSystemC(7),rootSystemD(7)})
 main({rootSystemG2,rootSystemF4,rootSystemE(6),rootSystemE(7),rootSystemE(8)})
+
