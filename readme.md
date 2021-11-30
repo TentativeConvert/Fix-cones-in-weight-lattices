@@ -13,7 +13,7 @@ The computations necessary to complete the proof of [HZ, Proposition 3.3] can be
 
 ## Viewing the results
 
-The results of the computations are written to tex files (`results_G2.tex`, `results_F4.tex`, ...).  To view them, compile the auxiliary file `ViewResults.tex` also provided here.  To display results for other than the exceptional types, the contents of ViewResults.tex need to be edited in an obvious way.  For reference, results for types A3, A5, B5, C5, D5, E6, E7, E8, F4, G2 are already included in the folder `Results`.
+The results of the computations are written to tex files (`results_G2.tex`, `results_F4.tex`, ...).  To view them, compile the auxiliary file `ViewResults.tex` also provided here.  To display results for other than the exceptional types, the contents of `ViewResults.tex` need to be edited in an obvious way.  For reference, results for types A3, A5, B5, C5, D5, E6, E7, E8, F4, G2 are already included in the folder `Results`.
 
 ## Interpretation
 
