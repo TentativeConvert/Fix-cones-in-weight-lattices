@@ -1,6 +1,4 @@
 restart
---loadPackage "WeylGroupsFixed"  -- <--- I had to install this with installPackage "WeylGroupsFixed" 
---check "WeylGroupsFixed"
 loadPackage "WeylGroupsExtras"
 --check "WeylGroupsExtras"
 loadPackage "Auxiliary"
@@ -181,14 +179,6 @@ analyseParabolic(RootSystem,Parabolic) := (R,P) -> (
     return result
     )
 
--- R = rootSystemA(3)
--- P = parabolic(R,set{1,3})
--- wR = longestWeylGroupElement(R);
--- fundamentalWeights = toList(apply(1..rank R, j -> fundamentalWeight(R,j)));  -- list of fundamental weights; so omega_i is the ith fundamental weight
--- symmetrizedFundamentalWeights = unique(apply(fundamentalWeights, w -> if -wR*w == w then w else w -wR*w));
--- analyseParabolic(R,P,symmetrizedFundamentalWeights)
-
-
 --------------------------------------------------
 -- the MAIN routine
 
@@ -206,51 +196,6 @@ main(List) := (listOfRootSystems) -> (
     	writeOut(R,results)
     	)
     )    
-main({rootSystemA(7),rootSystemB(7),rootSystemC(7),rootSystemD(7)})
-main({rootSystemD(8)})
-main({rootSystemG2,rootSystemF4})
-main({rootSystemE(6),rootSystemE(7)})
 
--- ####################################################################################################
--- exprimental version wtih mutlithreading -- DOES NOT WORK STABLY!
-pmain = method()
-pmain(List) := (listOfRootSystems) -> (
-    allowableThreads = 4;
-    for R in listOfRootSystems do (
-    	listOfRootSystemPairs := sort(apply(powerSet(set(1..rank R)), S -> rootSystemPair(R,parabolic(R,S)))); 
-    	for RSP in listOfRootSystemPairs do ( 
-	    print (" starting  "|prettyfy(dynkinType(RSP#"rootsystem"))|"  "|prettyfy(RSP#"parabolic")|"  ...   ");
-	    dogb := (R,P) -> () -> analyseParabolic(R,P);
-	    f := dogb(RSP#"rootsystem",RSP#"parabolic");
-    	    RSP#"task" = schedule f
-	    );
-	results := {};
-	for RSP in listOfRootSystemPairs do (
-	    print (" done with "|prettyfy(dynkinType(RSP#"rootsystem"))|"  "|prettyfy(RSP#"parabolic")|"  ...   ");
-	    while not(isReady(RSP#"task")) do sleep 1;
-    	    results = append(results,taskResult RSP#"task")
-	    );
-    	print "Printing ...";
-    	writeOut(R,results)
-    	)
-    )    
-pmain({rootSystemA(3)})
-
-
--- ####################################################################################################
--- ####################################################################################################/// TEST 
-R = rootSystemA(3)
-P = parabolic(R,set{1,3})
-checkIfLSatisfiesOrbitCondition(R,P)
-symmetrizedFundamentalWeights(R)
-
-analyseParabolic(R,P)
-
-dogb = (R,P) -> () -> (return analyseParabolic(R,P))
-f = dogb(R,P)
-t = schedule f
-taskResult t
-
-f = () -> analyseParabolic(R,P)
-t = schedule f
-taskResult t
+-- main({rootSystemA(7),rootSystemB(7),rootSystemC(7),rootSystemD(7)})
+main({rootSystemG2,rootSystemF4,rootSystemE(6),rootSystemE(7),rootSystemE(8)})
