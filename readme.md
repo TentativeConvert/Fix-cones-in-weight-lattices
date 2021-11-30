@@ -11,6 +11,14 @@ The code is written in Macaulay2 (version 1.18) and requires the `WeylGroups` pa
 
 The computations necessary to complete the proof of [HZ, Proposition 3.3] can be run by executing all code in `main.m2`.  The code there uses functions from the `WeylGroups` package and the two small auxiliary packages `WeylGroupsExtra` and `Auxiliary` provided here.  The code is currently set up to peform computations for all Dynkin diagrams Σ of exceptional types (E6, E7, E8, G2, F4).  This can easily be changed by editing the very last line of `main.m2`.
 
+The proof of [HZ, Proposition 3.3] only requires the verification of the condition *single cell* for certain pairs (Σ, H).  In addition, the code also checks whether the fix point moniod written as $\overline{\mathcal C}(H)^{[H]}$ is a *free* abelian monoid, and whether the pair (Σ, H) satisfies the weaker condition *orbit basis*.  However, because of the associated computational costs, the verification of this last condition is restricted to root systems Σ of rank < 8.  To change this behaviour, remove the conditional in the line
+
+```
+  if rank(R) < 8 then result#"orbitcondition" = checkIfLSatisfiesOrbitCondition(R,P);
+```
+
+in `main.m2`.
+
 ## Viewing the results
 
 The results of the computations are written to tex files (`results_G2.tex`, `results_F4.tex`, ...).  To view them, compile the auxiliary file `ViewResults.tex` also provided here.  To display results for other than the exceptional types, the contents of `ViewResults.tex` need to be edited in an obvious way.  For reference, results for types A3, A5, B5, C5, D5, E6, E7, E8, F4, G2 are already included in the folder `results`.
