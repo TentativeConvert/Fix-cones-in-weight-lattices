@@ -7,11 +7,11 @@
 \usepackage{longtable}
 
 \newcommand{\resulttable}[1]{
-  \section*{#1}
+  \section*{\(\Sigma\) of type #1}
 \begin{longtable}{llccc}
   \toprule
-  \textbf{subset} & \textbf{type} & \textbf{single cell} & \textbf{free} & \textbf{orbit} \\
-                  &               &                   &                & \textbf{basis} \\
+  \textbf{subset} H & \textbf{type} & \textbf{single cell} & \textbf{free} & \textbf{orbit} \\
+                    &               &                   &                & \textbf{basis} \\
   \midrule
   \input{results_#1.tex}
   \bottomrule
