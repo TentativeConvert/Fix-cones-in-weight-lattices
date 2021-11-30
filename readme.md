@@ -17,5 +17,5 @@ The results of the computations are written to tex files (`results_G2.tex`, `res
 
 ## Interpretation
 
-The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $$\overline{\mathcal C}(H)^{[H]}$$ is free abelian.
+The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is free abelian.
 
