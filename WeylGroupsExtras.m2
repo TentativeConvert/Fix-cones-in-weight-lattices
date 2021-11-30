@@ -3,7 +3,8 @@ newPackage(
 	Headline => "Some auxiliarly methods for the package WeylGroups",
 	Version => "0.0.1",
 	Date => "2020",
-	PackageExports => {"WeylGroupsFixed"},	   
+        Authors => {{Name => "Marcus Zibrowius"}},
+	PackageExports => {"WeylGroups"},	   
 	DebuggingMode => true)
 -- Put here the name of functions that should be visible to users
 export{
@@ -115,8 +116,9 @@ Headline
   WeylGroupsExtras
 Description
  Text
-  An auxiliary package for the paper XXX.
-  {\em This is work in progress.}
+  An auxiliary package that slightly extends the package "WeylGroups" by Baptiste Calmès and  Viktor Petrov.
+  Developed for research related to the manuscript:
+  Tobias Hemmert &  Marcus Zibrowius, The Witt rings of many flag varieties are exterior algebras.
 ///
 TEST ///
 R = rootSystemE(6)

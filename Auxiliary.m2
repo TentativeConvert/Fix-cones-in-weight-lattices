@@ -2,6 +2,7 @@ newPackage(
 	"Auxiliary",
 	Headline => "some auxiliary functions",
 	Version => "0.0.1",
+        Authors => {{Name => "Marcus Zibrowius"}},    
 	Date => "2020",
 	DebuggingMode => true)
 -- Put here the name of functions that should be visible to users
@@ -41,13 +42,13 @@ powerSet(Set) := (S) -> (
 beginDocumentation() -- very sensitive to indentation
 doc ///
 Key
-  Auxiliary
+  A small collection of auxiliary functions.
 Headline
   Auxiliary
 Description
  Text
-  An auxiliary package for the paper XXX.
-  {\em This is work in progress.}
+  Developed for research related to the manuscript:
+  Tobias Hemmert &  Marcus Zibrowius, The Witt rings of many flag varieties are exterior algebras.
 ///
 TEST ///
    M = ker substitute(matrix{{3,1,0,1,3,3}},ZZ/2)
