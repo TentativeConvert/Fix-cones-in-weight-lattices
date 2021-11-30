@@ -7,14 +7,7 @@ The code in this repository complements the following research manuscript:
 
 It is written in Macaulay2 (version 1.18) and requires the `WeylGroups` package, version >= 0.5.2, written by Baptiste Calmès and Viktor Petrov.  To see which version of the package you have, you can type `readPackage "WeylGroups"` in Macaulay2.  Version 0.5.2 was added to the Macaulay2 repositories in November 2021.
 
-The computations necessary to complete the proof of [HZ, Proposition 3.3] can be run by executing all code in `main.m2`.  The code there uses functions from the `WeylGroups` package and the two small auxiliary packages `WeylGroupsExtra` and `Auxiliary` provided here.  The code is currently set up to peform computations for all Dynkin diagrams Σ of exceptional types (G_2, F_4, E_6, E_7, E_8).  This can easily be changed by editing the very last line of `main.m2`.
+The computations necessary to complete the proof of [HZ, Proposition 3.3] can be run by executing all code in `main.m2`.  The code there uses functions from the `WeylGroups` package and the two small auxiliary packages `WeylGroupsExtra` and `Auxiliary` provided here.  The code is currently set up to peform computations for all Dynkin diagrams Σ of exceptional types (E6, E7, E8, G2, F4).  This can easily be changed by editing the very last line of `main.m2`.
 
-
-
-
-
-
-
-
-
+The results of the computations are written to tex files (`results_G2.tex`, `results_F4.tex`, ...).  To view them, compile the auxiliary file `ViewResults.tex` also provided here.  To display results for other than the exceptional types, the contents of ViewResults.tex need to be edited in an obvious way.  For reference, results for types A3, A5, B5, C5, D5, E6, E7, E8, F4, G2 are already included in the folder `Results`.
 
