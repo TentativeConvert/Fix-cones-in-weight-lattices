@@ -1,3 +1,5 @@
+private_*
+
 # temporary files
 temp.*
 .depend
