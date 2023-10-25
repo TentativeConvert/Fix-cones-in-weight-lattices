@@ -6,12 +6,16 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 
+\newcommand{\SingleCell}{YES}
+\newcommand{\Free}{YES}
+\newcommand{\OrbitBasis}{YES}
+\newcommand{\no}{no}
+
 \newcommand{\resulttable}[1]{
   \section*{\(\Sigma\) of type #1}
 \begin{longtable}{llccc}
   \toprule
-    \textbf{subset \(H\)} & \textbf{type of \(H\)} & \textbf{single} & \textbf{free} & \textbf{orbit} \\
-                  &               &   \textbf{cell}   &                & \textbf{basis} \\
+    \textbf{subset \(H\)} & \textbf{type of \(H\)} & \parbox{3em}{\bf\centering single cell} & \textbf{free} & \parbox{3em}{\bf\centering orbit basis} \\
   \midrule
   \input{results_#1.tex}
   \bottomrule
