@@ -6,7 +6,7 @@ The code in this repository complements the following research manuscript:
 
 ## Prerequisites
 
-The code is written in Macaulay2 and requires the `WeylGroups` package, version >= 0.5.2, written by Baptiste Calmès and Viktor Petrov.  
+The code is written in Macaulay2 and requires the `WeylGroups` package, written by Baptiste Calmès and Viktor Petrov. 
 It has been tested with [Macaulay2 version 1.22](https://github.com/Macaulay2/M2/releases/tag/release-1.22), which includes `WeylGroups` package version 0.5.3.
 It should also run with [Macaulay2 versions 1.18](https://github.com/Macaulay2/M2/releases/tag/release-1.18) and `WeylGroups` package version 0.5.2.  Older versions of the `WeylGroups` package contain a bug that will render the results incorrect.  To see which version of the package you have, you can type `readPackage "WeylGroups"` in Macaulay2.  
 
@@ -29,5 +29,5 @@ The results of the computations are written to tex files (`results_G2.tex`, `res
 
 ## Interpretation
 
-The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is free abelian.  Within the (comments in) the code, the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is referred to as `FixedPointMonoid`.
+The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is free abelian.  Within (the comments in) the code, the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is referred to as `FixedPointMonoid`.
 
