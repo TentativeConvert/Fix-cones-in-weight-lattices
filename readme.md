@@ -8,7 +8,7 @@ The code in this repository complements the following research manuscript:
 
 The code is written in Macaulay2 and requires the `WeylGroups` package, written by Baptiste Calmès and Viktor Petrov. 
 It has been tested with [Macaulay2 version 1.22](https://github.com/Macaulay2/M2/releases/tag/release-1.22), which includes `WeylGroups` package version 0.5.3.
-It should also run with [Macaulay2 versions 1.18](https://github.com/Macaulay2/M2/releases/tag/release-1.18) and `WeylGroups` package version 0.5.2.  Older versions of the `WeylGroups` package contain a bug that will render the results incorrect.  To see which version of the package you have, you can type `readPackage "WeylGroups"` in Macaulay2.  
+It should also run with [Macaulay2 version 1.18](https://github.com/Macaulay2/M2/releases/tag/release-1.18) and `WeylGroups` package version 0.5.2.  Older versions of the `WeylGroups` package contain a bug that will render the results incorrect.  To see which version of the package you have, you can type `readPackage "WeylGroups"` in Macaulay2.  
 
 
 ## Executing the code
