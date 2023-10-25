@@ -23,11 +23,15 @@ The proof of [HZ, Proposition 3.3] only requires the verification of the conditi
 
 in `main.m2`.
 
+## Reading the code
+
+An effort has been made to make the code as self-explanatory as possible.  The term `FixedPointMonoid` refers to the fixed point monoid written as $\overline{\mathcal C}(H)^{[H]}$ in [HZ].
+
 ## Viewing the results
 
 The results of the computations are written to tex files (`results_G2.tex`, `results_F4.tex`, ...).  To view them, compile the auxiliary file `ViewResults.tex` also provided here.  To display results for other than the exceptional types, the contents of `ViewResults.tex` need to be edited in an obvious way.  For reference, results for exceptional types are already included in the folder `results`.
 
-## Interpretation
+## Interpreting the results
 
-The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is free abelian.  Within (the comments in) the code, the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is referred to as `FixedPointMonoid`.
+The notation in `ViewResults.tex` follows [HZ]. The numbering of simple roots follows the conventions of Nicolas Bourbaki, *Lie groups and Lie algebras 4-6* (see plates at the end of the book).  The conditions *single cell* and *orbit basis* are explained in [HZ, §1: Overview].  The condition *free* signifies whether the fixed point monoid $\overline{\mathcal C}(H)^{[H]}$ is free abelian.  
 
